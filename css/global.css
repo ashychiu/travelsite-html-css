@@ -1,0 +1,32 @@
+body {
+  margin: 0%;
+  font-family: Verdana;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 80px;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__nav-item {
+  padding: 10px 20px;
+}
+.header__nav-link--active {
+  border-bottom: 0.1875rem solid #db7a4e;
+  padding: 0 0 10px 0;
+}
