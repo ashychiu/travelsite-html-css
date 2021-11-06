@@ -17,7 +17,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 80px;
+  margin: 0 10%;
   height: 10vh;
 }
 
