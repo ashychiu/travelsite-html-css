@@ -1,6 +1,42 @@
-h1.header__title {
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.hero__container {
+  background-color: #fefaf5;
+  height: 70vh;
+}
+.hero__container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10%;
+}
+h1.hero__title {
   color: #335576;
-  display: inline;
-  font-size: 1.25rem;
-  font-weight: 560;
+}
+.hero__content {
+  color: #335576;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.hero__link {
+  color: white;
+  background-color: #db7a4e;
+  padding: 0.625rem 2.5rem;
+  border-radius: 25px;
+  font-size: 14px;
+}
+.hero__container-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5%;
+}
+.hero__image {
+  width: 80%;
 }

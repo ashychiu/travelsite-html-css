@@ -18,7 +18,16 @@ ul {
   justify-content: space-between;
   align-items: center;
   margin: 0 80px;
+  height: 10vh;
 }
+
+h1.header__title {
+  color: #335576;
+  display: inline;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
 .header__nav {
   display: flex;
   justify-content: space-evenly;
@@ -36,7 +45,7 @@ ul {
   background-color: #fefaf5;
   display: flex;
   justify-content: space-evenly;
-  height: 10vw;
+  height: 20vh;
   padding-top: 10px;
 }
 .footer h2 {
