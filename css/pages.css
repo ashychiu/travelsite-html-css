@@ -1,0 +1,52 @@
+/* Ref: https://stackoverflow.com/questions/40269214/how-to-display-a-portion-of-an-image-with-css */
+.itinerary {
+  background-image: url(../assets/Images/iceland.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+}
+
+.itinerary__title {
+  color: #fff;
+  font-size: 4.6875rem;
+  padding: 0 10%;
+}
+
+.itinerary__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itinerary__card-container {
+  background-color: white;
+  margin: 0 20px;
+  padding: 0.625rem;
+  border-radius: 5px;
+}
+
+.itinerary__card-list {
+  padding-left: 0;
+}
+
+.itinerary__card-title {
+  font-size: 1.25rem;
+  border-bottom: 3px solid black;
+  margin: 10px 10px 20px 10px;
+  text-align: center;
+}
+
+.itinerary__card-item {
+  font-size: 18px;
+  background-color: #fefaf5;
+  margin: 20px 10px 20px 10px;
+  padding: 15px 80px;
+  text-align: center;
+}
+
+.itinerary__card-item--padding {
+  margin-bottom: 50px;
+}
