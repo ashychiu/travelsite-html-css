@@ -4,13 +4,11 @@
   align-items: center;
   width: 100%;
 }
-
 .hero__container {
   background-color: #fefaf5;
   height: 70vh;
   margin-top: 10vh;
 }
-
 .hero__container-left {
   display: flex;
   flex-direction: column;
@@ -18,17 +16,14 @@
   align-items: flex-start;
   padding-left: 10%;
 }
-
 h1.hero__title {
   color: #335576;
 }
-
 .hero__content {
   color: #335576;
   font-size: 0.875rem;
   line-height: 1.5;
 }
-
 .hero__link {
   color: white;
   background-color: #db7a4e;
@@ -36,7 +31,6 @@ h1.hero__title {
   border-radius: 25px;
   font-size: 0.875rem;
 }
-
 /* Transition for hero link */
 .hero__link:hover {
   opacity: 1;
@@ -44,55 +38,46 @@ h1.hero__title {
   background-color: #335576;
   transform: scale(1.1);
 }
-
 .hero__container-right {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-right: 5%;
 }
-
 .hero__image {
   width: 70%;
   transition-duration: 5s;
 }
-
 /* Animation for hero image */
 .hero__image:hover {
   transform: rotate(-15deg) translateX(100px);
 }
-
 h2.card__title {
   color: #335576;
   margin-left: 10%;
   margin-top: 3.125rem;
 }
-
 .card__container {
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
   align-items: center;
 }
-
 /* Animation for cards */
 .card__image-container:hover {
   transform: scale(1.1);
 }
-
 .card__image {
   width: 18.75rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(0, 0, 0, 0.2);
   border-radius: 5px;
   margin: 1.25rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.2);
 }
-
 .card__image-container {
   position: relative;
   text-align: center;
 }
-
 .card__name {
   position: absolute;
   bottom: 2.5rem;
@@ -104,7 +89,7 @@ h2.card__title {
 
 /* Contact form styling */
 /* Ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form */
-input[type=text],
+input[type="text"],
 select,
 textarea {
   width: 100%;
@@ -117,7 +102,7 @@ textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+input[type="submit"] {
   font-size: 1rem;
   background-color: #db7a4e;
   color: #fff;
@@ -127,7 +112,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #335576;
 }
 
@@ -147,4 +132,4 @@ input[type=submit]:hover {
 .contact__item {
   font-size: 0.875rem;
   color: #335576;
-}/*# sourceMappingURL=home.css.map */
+}

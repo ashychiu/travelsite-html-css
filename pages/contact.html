@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Site - Hawaii</title>
     <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/destinations.css" />
+    <link rel="stylesheet" href="../css/home.css" />
   </head>
   <body>
     <header class="header">
@@ -15,14 +15,14 @@
       </h1>
       <ul class="header__nav">
         <li class="header__nav-item">
-          <a class="header__nav-link" href="../index.html">Home</a>
-        </li>
-        <li class="header__nav-item">
           <a
             class="header__nav-link header__nav-link--active"
-            href="./hawaii.html"
-            >Hawaii</a
+            href="../index.html"
+            >Home</a
           >
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="./hawaii.html">Hawaii</a>
         </li>
         <li class="header__nav-item">
           <a class="header__nav-link" href="./iceland.html">Iceland</a>
@@ -33,44 +33,53 @@
       </ul>
     </header>
     <main>
-      <section class="itinerary-hawaii">
-        <h1 class="itinerary__title">Hawaii</h1>
-        <div class="itinerary__container">
-          <div class="itinerary__card-container">
-            <h4 class="itinerary__card-title">Friday</h4>
-            <ul class="itinerary__card-list">
-              <li class="itinerary__card-item">Breakfast</li>
-              <li class="itinerary__card-item">Lunch</li>
-              <li class="itinerary__card-item">Dinner</li>
-              <li class="itinerary__card-item itinerary__card-item--padding">
-                Snorkeling
-              </li>
-            </ul>
-          </div>
-          <div class="itinerary__card-container">
-            <h4 class="itinerary__card-title">Saturday</h4>
-            <ul class="itinerary__card-list">
-              <li class="itinerary__card-item">Breakfast</li>
-              <li class="itinerary__card-item">Lunch</li>
-              <li class="itinerary__card-item">Dinner</li>
-              <li class="itinerary__card-item itinerary__card-item--padding">
-                Snorkeling
-              </li>
-            </ul>
-          </div>
-          <div class="itinerary__card-container">
-            <h4 class="itinerary__card-title">Sunday</h4>
-            <ul class="itinerary__card-list">
-              <li class="itinerary__card-item">Breakfast</li>
-              <li class="itinerary__card-item">Lunch</li>
-              <li class="itinerary__card-item">Dinner</li>
-              <li class="itinerary__card-item itinerary__card-item--padding">
-                Snorkeling
-              </li>
-            </ul>
-          </div>
+      <section class="hero">
+        <div class="hero__container hero__container-left">
+          <h1 class="hero__title">Get Started</h1>
+          <p class="hero__content">
+            Please fill out the form below to receive more information about the
+            destinations and travel services we offer.
+          </p>
+        </div>
+
+        <div class="hero__container hero__container-right">
+          <img
+            class="hero__image"
+            src="../assets/Images/hero.png"
+            alt="Travel with us"
+          />
         </div>
       </section>
+      <!-- Ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form -->
+      <div class="contact__container">
+        <h1 class="contact__title">Let's Connect</h1>
+        <form action="thankyou.html">
+          <label for="fname" class="contact__item">First Name</label>
+          <input type="text" id="fname" name="firstname" />
+
+          <label for="lname" class="contact__item">Last Name</label>
+          <input type="text" id="lname" name="lastname" />
+          <label for="fname" class="contact__item">Email</label>
+          <input type="text" id="fname" name="email" />
+          <label for="country" class="contact__item"
+            >Where do you want to go?</label
+          >
+          <select id="country" name="country">
+            <option value="hawaii">Hawaii</option>
+            <option value="iceland">Iceland</option>
+            <option value="greece">Greece</option>
+            <option value="others">Others</option>
+          </select>
+          <label for="subject" class="contact__item">Message</label>
+          <textarea
+            id="subject"
+            name="subject"
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__container">
