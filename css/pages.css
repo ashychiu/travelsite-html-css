@@ -1,6 +1,26 @@
 /* Ref: https://stackoverflow.com/questions/40269214/how-to-display-a-portion-of-an-image-with-css */
-.itinerary {
+.itinerary-iceland {
   background-image: url(../assets/Images/iceland.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+}
+
+.itinerary-hawaii {
+  background-image: url(../assets/Images/hawaii.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+}
+
+.itinerary-greece {
+  background-image: url(../assets/Images/greece.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
