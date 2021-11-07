@@ -5,7 +5,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
 ul {
@@ -14,11 +13,13 @@ ul {
 
 .header {
   background-color: #ffffff;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 10%;
   height: 10vh;
+  position: fixed;
+  z-index: 1;
 }
 
 h1.header__title {
@@ -26,6 +27,7 @@ h1.header__title {
   display: inline;
   font-size: 1.25rem;
   font-weight: 600;
+  margin: 0 10%;
 }
 .header__title-link {
   color: #335576;
@@ -37,6 +39,9 @@ h1.header__title {
 .header__nav-item {
   padding: 10px 20px;
   font-size: 15px;
+}
+.header__nav-link {
+  color: #000;
 }
 .header__nav-link--active {
   border-bottom: 0.1875rem solid #db7a4e;

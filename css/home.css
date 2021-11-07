@@ -7,6 +7,7 @@
 .hero__container {
   background-color: #fefaf5;
   height: 70vh;
+  margin-top: 10vh;
 }
 .hero__container-left {
   display: flex;
@@ -30,6 +31,12 @@ h1.hero__title {
   border-radius: 25px;
   font-size: 14px;
 }
+/* Transition for hero link */
+.hero__link:hover {
+  color: #db7a4e;
+  background-color: #335576;
+  transform: scale(1.1);
+}
 .hero__container-right {
   display: flex;
   justify-content: center;
@@ -37,7 +44,12 @@ h1.hero__title {
   padding-right: 5%;
 }
 .hero__image {
-  width: 80%;
+  width: 70%;
+  transition-duration: 5s;
+}
+/* Animation for hero image */
+.hero__image:hover {
+  transform: rotate(-15deg) translateX(100px);
 }
 h2.card__title {
   color: #335576;
@@ -48,6 +60,10 @@ h2.card__title {
   justify-content: center;
   margin-bottom: 5%;
   align-items: center;
+}
+/* Animation for cards */
+.card__image-container:hover {
+  transform: scale(1.1);
 }
 .card__image {
   width: 18.75rem;
@@ -67,4 +83,45 @@ h2.card__title {
   font-size: 24px;
   font-weight: 700;
   color: #f7f7f7;
+}
+
+/* Contact form styling */
+/* Ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #db7a4e;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #335576;
+}
+
+.contact__container {
+  width: 60%;
+  border-radius: 5px;
+  background-color: fff;
+  padding: 50px 200px;
+  margin: auto;
+}
+
+.contact__title,
+.contact__item {
+  color: #335576;
 }
