@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   margin: 0%;
   font-family: Verdana;
@@ -5,6 +10,9 @@ body {
 
 a {
   text-decoration: none;
+}
+a:hover {
+  opacity: 0.75;
 }
 
 ul {
@@ -25,7 +33,7 @@ ul {
 h1.header__title {
   color: #335576;
   display: inline;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 600;
   margin: 0 10%;
 }
@@ -37,23 +45,24 @@ h1.header__title {
   justify-content: space-evenly;
 }
 .header__nav-item {
-  padding: 10px 20px;
-  font-size: 15px;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.9375rem;
 }
 .header__nav-link {
   color: #000;
 }
 .header__nav-link--active {
-  border-bottom: 0.1875rem solid #db7a4e;
-  padding: 0 0 10px 0;
+  border-bottom: 3px solid #db7a4e;
+  padding: 0 0 0.625rem 0;
 }
 
 .footer {
   background-color: #fefaf5;
   display: flex;
   justify-content: space-evenly;
-  height: 20vh;
-  padding: 20px 0;
+  height: 25vh;
+  padding-bottom: 1.25rem;
+  padding-top: 0.625rem;
 }
 .footer h2 {
   color: #335576;
@@ -70,7 +79,7 @@ h1.header__title {
 }
 .footer__email-link {
   color: #335576;
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 .footer__item {
   text-transform: uppercase;

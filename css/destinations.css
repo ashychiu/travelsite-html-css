@@ -56,18 +56,18 @@
 .itinerary__card-title {
   font-size: 1.25rem;
   border-bottom: 3px solid black;
-  margin: 10px 10px 20px 10px;
+  margin: 0.625rem 0.625rem 1.25rem 0.625rem;
   text-align: center;
 }
 
 .itinerary__card-item {
-  font-size: 18px;
+  font-size: 1.125rem;
   background-color: #fefaf5;
-  margin: 20px 10px 20px 10px;
-  padding: 15px 80px;
+  margin: 1.25rem 0.625rem 1.25rem 0.625rem;
+  padding: 0.9375rem 5rem;
   text-align: center;
 }
 
 .itinerary__card-item--padding {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }

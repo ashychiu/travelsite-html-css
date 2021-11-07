@@ -29,10 +29,11 @@ h1.hero__title {
   background-color: #db7a4e;
   padding: 0.625rem 2.5rem;
   border-radius: 25px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 /* Transition for hero link */
 .hero__link:hover {
+  opacity: 1;
   color: #db7a4e;
   background-color: #335576;
   transform: scale(1.1);
@@ -69,7 +70,7 @@ h2.card__title {
   width: 18.75rem;
   border: 1px solid rgb(0, 0, 0, 0.2);
   border-radius: 5px;
-  margin: 20px;
+  margin: 1.25rem;
   box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.2);
 }
 .card__image-container {
@@ -80,7 +81,7 @@ h2.card__title {
   position: absolute;
   bottom: 2.5rem;
   right: 2.5rem;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #f7f7f7;
 }
@@ -91,19 +92,20 @@ input[type="text"],
 select,
 textarea {
   width: 100%;
-  padding: 12px;
+  padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin-top: 0.375rem;
+  margin-bottom: 1rem;
   resize: vertical;
 }
 
 input[type="submit"] {
+  font-size: 1rem;
   background-color: #db7a4e;
   color: #fff;
-  padding: 12px 20px;
+  padding: 0.75rem 1.25rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -114,14 +116,19 @@ input[type="submit"]:hover {
 }
 
 .contact__container {
-  width: 60%;
+  width: 80%;
   border-radius: 5px;
   background-color: fff;
-  padding: 50px 200px;
+  padding: 3.125rem 12.5rem;
   margin: auto;
 }
 
-.contact__title,
+.contact__title {
+  font-size: 1.75rem;
+  color: #335576;
+}
+
 .contact__item {
+  font-size: 0.875rem;
   color: #335576;
 }
