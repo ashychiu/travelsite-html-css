@@ -29,45 +29,47 @@
   background-position: center;
 }
 
-.itinerary__title {
-  color: #fff;
-  font-size: 4.6875rem;
-  padding: 0 10%;
-  margin-top: 20vh;
-}
+.itinerary {
+  &__title {
+    color: #fff;
+    font-size: 4.6875rem;
+    padding: 0 10%;
+    margin-top: 20vh;
+  }
 
-.itinerary__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.itinerary__card-container {
-  background-color: white;
-  margin: 0 20px;
-  padding: 0.625rem;
-  border-radius: 5px;
-}
+  &__card-container {
+    background-color: white;
+    margin: 0 20px;
+    padding: 0.625rem;
+    border-radius: 5px;
+  }
 
-.itinerary__card-list {
-  padding-left: 0;
-}
+  &__card-list {
+    padding-left: 0;
+  }
 
-.itinerary__card-title {
-  font-size: 1.25rem;
-  border-bottom: 3px solid black;
-  margin: 0.625rem 0.625rem 1.25rem 0.625rem;
-  text-align: center;
-}
+  &__card-title {
+    font-size: 1.25rem;
+    border-bottom: 3px solid black;
+    margin: 0.625rem 0.625rem 1.25rem 0.625rem;
+    text-align: center;
+  }
 
-.itinerary__card-item {
-  font-size: 1.125rem;
-  background-color: #fefaf5;
-  margin: 1.25rem 0.625rem 1.25rem 0.625rem;
-  padding: 0.9375rem 5rem;
-  text-align: center;
-}
+  &__card-item {
+    font-size: 1.125rem;
+    background-color: #fefaf5;
+    margin: 1.25rem 0.625rem 1.25rem 0.625rem;
+    padding: 0.9375rem 5rem;
+    text-align: center;
+  }
 
-.itinerary__card-item--padding {
-  margin-bottom: 3.125rem;
+  &__card-item--padding {
+    margin-bottom: 3.125rem;
+  }
 }

@@ -3,88 +3,104 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
+  &__container {
+    background-color: #fefaf5;
+    height: 70vh;
+    margin-top: 10vh;
+  }
+
+  &__container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10%;
+  }
+
+  &__title {
+    color: #335576;
+  }
+
+  &__content {
+    color: #335576;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  &__link {
+    color: white;
+    background-color: #db7a4e;
+    padding: 0.625rem 2.5rem;
+    border-radius: 25px;
+    font-size: 0.875rem;
+  }
+
+  /* Transition for hero link */
+  &__link:hover {
+    opacity: 1;
+    color: #db7a4e;
+    background-color: #335576;
+    transform: scale(1.1);
+  }
+
+  &__container-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
+  }
+
+  &__image {
+    width: 70%;
+    transition-duration: 5s;
+  }
+
+  /* Animation for hero image */
+  &__image:hover {
+    transform: rotate(-15deg) translateX(100px);
+  }
 }
-.hero__container {
-  background-color: #fefaf5;
-  height: 70vh;
-  margin-top: 10vh;
-}
-.hero__container-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 10%;
-}
-h1.hero__title {
-  color: #335576;
-}
-.hero__content {
-  color: #335576;
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
-.hero__link {
-  color: white;
-  background-color: #db7a4e;
-  padding: 0.625rem 2.5rem;
-  border-radius: 25px;
-  font-size: 0.875rem;
-}
-/* Transition for hero link */
-.hero__link:hover {
-  opacity: 1;
-  color: #db7a4e;
-  background-color: #335576;
-  transform: scale(1.1);
-}
-.hero__container-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 5%;
-}
-.hero__image {
-  width: 70%;
-  transition-duration: 5s;
-}
-/* Animation for hero image */
-.hero__image:hover {
-  transform: rotate(-15deg) translateX(100px);
-}
-h2.card__title {
-  color: #335576;
-  margin-left: 10%;
-  margin-top: 3.125rem;
-}
-.card__container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
-  align-items: center;
-}
-/* Animation for cards */
-.card__image-container:hover {
-  transform: scale(1.1);
-}
-.card__image {
-  width: 18.75rem;
-  border: 1px solid rgb(0, 0, 0, 0.2);
-  border-radius: 5px;
-  margin: 1.25rem;
-  box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.2);
-}
-.card__image-container {
-  position: relative;
-  text-align: center;
-}
-.card__name {
-  position: absolute;
-  bottom: 2.5rem;
-  right: 2.5rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #f7f7f7;
+
+.card {
+  &__title {
+    color: #335576;
+    margin-left: 10%;
+    margin-top: 3.125rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    align-items: center;
+  }
+  /* Animation for cards */
+  &__image-container:hover {
+    transform: scale(1.1);
+  }
+
+  &__image {
+    width: 18.75rem;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 1.25rem;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.2);
+  }
+
+  &__image-container {
+    position: relative;
+    text-align: center;
+  }
+
+  &__name {
+    position: absolute;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f7f7f7;
+  }
 }
 
 /* Contact form styling */
@@ -116,20 +132,22 @@ input[type="submit"]:hover {
   background-color: #335576;
 }
 
-.contact__container {
-  width: 80%;
-  border-radius: 5px;
-  background-color: fff;
-  padding: 3.125rem 12.5rem;
-  margin: auto;
-}
+.contact {
+  &__container {
+    width: 80%;
+    border-radius: 5px;
+    background-color: fff;
+    padding: 3.125rem 12.5rem;
+    margin: auto;
+  }
 
-.contact__title {
-  font-size: 1.75rem;
-  color: #335576;
-}
+  &__title {
+    font-size: 1.75rem;
+    color: #335576;
+  }
 
-.contact__item {
-  font-size: 0.875rem;
-  color: #335576;
+  &__item {
+    font-size: 0.875rem;
+    color: #335576;
+  }
 }
