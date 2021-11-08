@@ -36,31 +36,26 @@
     padding: 0 10%;
     margin-top: 20vh;
   }
-
   &__container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   &__card-container {
     background-color: white;
     margin: 0 20px;
     padding: 0.625rem;
     border-radius: 5px;
   }
-
   &__card-list {
     padding-left: 0;
   }
-
   &__card-title {
     font-size: 1.25rem;
     border-bottom: 3px solid black;
     margin: 0.625rem 0.625rem 1.25rem 0.625rem;
     text-align: center;
   }
-
   &__card-item {
     font-size: 1.125rem;
     background-color: #fefaf5;
@@ -68,7 +63,6 @@
     padding: 0.9375rem 5rem;
     text-align: center;
   }
-
   &__card-item--padding {
     margin-bottom: 3.125rem;
   }
